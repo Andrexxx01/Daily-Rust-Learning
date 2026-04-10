@@ -76,4 +76,28 @@ fn main() {
     println!("The value of some_value is: {}", some_value);
     let another_value = 30u16;
     println!("The value of another_value is: {}", another_value);
+    let yet_another_value = 4_321i16;
+    println!("The value of yet_another_value is: {}", yet_another_value);
+    let days: usize = 55;
+    let years: isize = -15_000;
+    println!("The value of days is: {days}");
+    println!("The value of years is: {}", years);
+
+    // 10. Learn about string literals and escape sequences
+    println!("Dear Emily,\nHow have you been?");
+    println!("\tOnce upon a time");
+    println!("Juliet said \"I love you Romeo\"");
+    let filepath = "C:\\My Documents\\new\\videos";
+    println!("The file path is: {}", filepath);
+    let raw_filepath = r"C:\My Documents\new\videos";
+    println!("The raw file path is: {raw_filepath}");
+
+    // 11. Learn about string manipulation and methods
+    let value: i32 = -15;
+    println!("The value is: {}", value.abs());
+    let empty_space = "   Hello World!   ";
+    println!("{}, The length of empty_space is: {}", empty_space.trim(), empty_space.len());
+    println!("{}", value.pow(2));
+    println!("{}", value.pow(3));
+    
 }
